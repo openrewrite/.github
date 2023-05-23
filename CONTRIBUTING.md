@@ -100,7 +100,7 @@ You will also need to add an override to the compiler parameters for the `rewrit
 
 #### Optimizing your IDE for only modules you want to work on
 
-If you are only working on a subset of the modules in this project, you can optimize your IDE to only load those modules. Create a new `IDE.properties` file if one doesn't exist in the base directory of the project and then copy the [IDE.properties.tmp](https://github.com/openrewrite/rewrite/blob/main/IDE.properties.tmp) file to it. Next, comment out any lines that correspond to modules that you do not want to work on. This will cause Gradle to swap those project dependencies for binary dependencies resolved from either Maven local or the OSS snapshots repository – which will speed up your IDE.
+If you are only working on a subset of the modules in [openrewrite/rewrite](https://github.com/openrewrite/rewrite), you can optimize your IDE to only load those modules. Create a new `IDE.properties` file if one doesn't exist in the base directory of the project and then copy the contents of [IDE.properties.tmp](https://github.com/openrewrite/rewrite/blob/main/IDE.properties.tmp) file to it. Next, comment out any lines that correspond to modules that you do not want to work on. This will cause Gradle to swap those project dependencies for binary dependencies resolved from either Maven local or the OSS snapshots repository – which will speed up your IDE.
 
 ### Windows caveats
 
