@@ -78,7 +78,7 @@ We recommend that you use [IntelliJ](https://www.jetbrains.com/idea/) for develo
 
 All projects use Java 17 for their tests, to take advantage of text blocks. For `src/main`, we use Java 8 exclusively so that our users only need Java 8 to run OpenRewrite migration recipes. We use [Gradle](https://gradle.org/) as our build tool.
 
-**Note**: The Gradle wrapper requires a preexisting JDK 8 installation. If not present, the build will fail to download the toolchain in the `:write-gradle:compilyGroovy` task. You will need to install JDK 8 manually. For Unix systems, we strongly commend using [sdkman](https://sdkman.io/) to install and switch between Java versions. 
+**Note**: The Gradle wrapper requires a preexisting JDK 8 installation. If not present, the build will fail to download the toolchain in the `:write-gradle:compilyGroovy` task. You will need to install JDK 8 manually. For Unix systems, we strongly recommend using [SDKMAN!](https://sdkman.io/) to install and switch between Java versions. 
 
 ### IntelliJ changes
 
