@@ -32,7 +32,7 @@ We monitor all of these channels and try to respond in a timely manner. Please o
 Furthermore, when asking a question or reporting an issue, please be as specific as possible and include details that will help us immediately dive in. For instance:
 
 1. Share what you have read and tried already so that we don't end up sending you to places you've already been.
-2. Explain how you are running OpenRewrite. Are you using Maven? Gradle? Moderne.io? Something else?
+2. Explain how you are running OpenRewrite. Are you using Maven? Gradle? [Moderne.io](https://app.moderne.io)? Something else?
 3. Provide the version numbers of the Maven or Gradle plugin, OpenRewrite itself, and any rewrite modules you may be using.
 4. Add as much of your OpenRewrite configuration as you're able to share so that we can rule out configuration issues.
 5. Let us know what recipe you are running, especially when using a `rewrite.yml` file.
