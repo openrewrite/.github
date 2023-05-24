@@ -23,7 +23,6 @@ Closes #1
 <!-- Any thoughts you would like to share in addition to the above. -->
 
 ### Checklist
-
 - [ ] I've added unit tests to cover both positive and negative cases
 - [ ] I've added the license header to any new files through `./gradlew licenseFormat`
 - [ ] I've used the IntelliJ auto-formatter on affected files

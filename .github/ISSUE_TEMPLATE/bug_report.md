@@ -69,9 +69,7 @@ class A {
 ```
 
 ## What did you expect to see?
-<!--
-A code snippet, or a description of the behavior you expected helps us write a test to ensure the issue is fixed.
--->
+<!-- A code snippet, or a description of the behavior you expected helps us write a test to ensure the issue is fixed. -->
 ```java
 class A {
     void foo(String bar) {
@@ -81,9 +79,7 @@ class A {
 ```
 
 ## What did you see instead?
-<!--
-A code snippet, or a description of the behavior you saw instead of the above expected result.
--->
+<!-- A code snippet, or a description of the behavior you saw instead of the above expected result. -->
 ```java
 class A {
     void foo(String bar) {
@@ -93,13 +89,10 @@ class A {
 ```
 
 ## What is the full stack trace of any errors you encountered?
-<!--
-When errors occur, please include the output of `--stacktrace` for Gradle or `--debug` for Maven.
--->
+<!-- When errors occur, please include the output of `--stacktrace` for Gradle or `--debug` for Maven. -->
 ```
 stacktrace output here
 ```
 
 ## Are you interested in [contributing a fix to OpenRewrite](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#contributing-fixes)?
-
 <!-- Indicate if this is something you would like to work on, and how we can best support you in doing so. -->
