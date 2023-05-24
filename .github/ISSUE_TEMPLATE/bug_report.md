@@ -15,7 +15,7 @@ Feel free to delete any sections that don't apply to your issue.
 ## What version of OpenRewrite are you using?
 <!--
 Whenever possible please try to replicate your issue with the latest versions of OpenRewrite.
-The latest major and minor versions of OpenRewrite projects are usually listed here.
+The latest major and minor versions of OpenRewrite projects are usually listed here:
 https://docs.openrewrite.org/reference/latest-versions-of-every-openrewrite-module
 For patch releases check the GitHub Releases page for the respective project.
 
