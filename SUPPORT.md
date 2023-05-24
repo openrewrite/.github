@@ -1,6 +1,6 @@
 ### Asking questions & reporting issues
 
-e have multiple channels where you can ask questions about OpenRewrite:
+We have multiple channels where you can ask questions about OpenRewrite:
 
 * [Slack](https://join.slack.com/t/rewriteoss/shared_invite/zt-nj42n3ea-b~62rIHzb3Vo0E1APKCXEA)
 * [Discord](https://discord.gg/xk3ZKrhWAb)
