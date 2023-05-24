@@ -24,7 +24,8 @@ The latest versions of some common OpenRewrite projects are listed here.
 - https://github.com/openrewrite/rewrite-static-analysis/releases
 
 We release every few weeks, so it's possible that your issue has already been fixed.
-You might even want to use [our snapshot releases](https://docs.openrewrite.org/reference/snapshot-instructions) with recent changes.
+
+If you want to try the most recent changes that haven't been fully released yet, you can check out our [snapshot releases](https://docs.openrewrite.org/reference/snapshot-instructions)
 -->
 I am using
 
@@ -34,10 +35,10 @@ I am using
 
 ## How are you running OpenRewrite?
 <!--
-Are you using the Maven plugin, Gradle plugin, Moderne CLI, Moderne.io or some other way?
+Are you using the Maven plugin, Gradle plugin, Moderne CLI, Moderne.io or something else?
 Is your project a single module or a multi-module project?
 
-Can you share your configuration such that we can rule out any configuration issues?
+Can you share your configuration so that we can rule out any configuration issues?
 
 Is your project public? If so, can you share a link to it?
 Code snippets can also be shared privately via [our public Slack](https://join.slack.com/t/rewriteoss/shared_invite/zt-nj42n3ea-b~62rIHzb3Vo0E1APKCXEA).
