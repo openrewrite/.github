@@ -8,7 +8,7 @@ Feel free to delete any sections that don't apply to your pull request.
 
 ## What's your motivation?
 <!-- This can link to close a separate issue, or be described on the pull request itself -->
-Fixes #1
+Closes #1
 
 ## Anything in particular you'd like reviewers to focus on?
 <!-- You can also start a discussion on particular aspects of your implementation on the files tab yourself. -->

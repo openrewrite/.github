@@ -15,17 +15,14 @@ Feel free to delete any sections that don't apply to your issue.
 ## What version of OpenRewrite are you using?
 <!--
 Whenever possible please try to replicate your issue with the latest versions of OpenRewrite.
-The latest versions of some common OpenRewrite projects are listed here.
-- https://github.com/openrewrite/rewrite-maven-plugin/releases
-- https://github.com/openrewrite/rewrite-gradle-plugin/releases
-- https://github.com/openrewrite/rewrite/releases
-- https://github.com/openrewrite/rewrite-recipe-bom/releases
-- https://github.com/openrewrite/rewrite-spring/releases
-- https://github.com/openrewrite/rewrite-static-analysis/releases
+The latest major and minor versions of OpenRewrite projects are usually listed here.
+https://docs.openrewrite.org/reference/latest-versions-of-every-openrewrite-module
+For patch releases check the GitHub Releases page for the respective project.
 
 We release every few weeks, so it's possible that your issue has already been fixed.
 
-If you want to try the most recent changes that haven't been fully released yet, you can check out our [snapshot releases](https://docs.openrewrite.org/reference/snapshot-instructions)
+If you want to try the most recent changes that haven't been fully released yet, you can check out our snapshot releases
+https://docs.openrewrite.org/reference/snapshot-instructions
 -->
 I am using
 
@@ -102,3 +99,7 @@ When errors occur, please include the output of `--stacktrace` for Gradle or `--
 ```
 stacktrace output here
 ```
+
+## Are you interested in [contributing a fix to OpenRewrite](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#contributing-fixes)?
+
+<!-- Indicate if this is something you would like to work on, and how we can best support you in doing so. -->

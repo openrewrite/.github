@@ -50,6 +50,6 @@ class A {
 
 <!-- Any thoughts such as considerations and limitations when applying this recipe, or hints on the implementation. -->
 
-## Are you interested in contributing this recipe to OpenRewrite?
+## Are you interested in [contributing this recipe to OpenRewrite](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#adding-new-recipes)?
 
-<!-- Indicate if this is something you would like to work on, and how we can best support you in doing so.-->
+<!-- Indicate if this is something you would like to work on, and how we can best support you in doing so. -->
