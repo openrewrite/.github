@@ -56,7 +56,11 @@ As you increase your knowledge of OpenRewrite, you might find mistakes in our do
 
 The best way to work towards a fix is to first replicate the issue with a minimal unit test. Nearly every recipe has a dedicated unit test that shows a before and after situation. Usually, you can copy the first unit test for any specific recipe, and adjust that to match the problem case. 
 
-Once replicated, you can already open a draft pull request, even if you are unsure whether you will be able to contribute a fix. That allows us to also have a look at the specifics of the issue in our IDE, if necessary. From there, we generally recommend that people step through the recipe execution using the debugger while running the new unit test. As you make changes to the recipe, you should see the test go from failing to passing. If you get stuck at any point, we’re happy to help.
+Once replicated, please open a draft pull request even if you are unsure whether or not you will be able to contribute a fix. If you do decide that you want to fix it, you can iterate on that PR. 
+
+By opening one early, you allow us to have a look at the specifics of the issue in our IDE, if necessary. 
+
+From there, we generally recommend that people step through the recipe execution using the debugger while running the new unit test. As you make changes to the recipe, you should see the test go from failing to passing. If you get stuck at any point, we’re happy to help. Please feel free to update the PR with questions.
 
 Are you looking for a good place to start contributing? We have added the ["Good first issue"](https://github.com/orgs/openrewrite/projects/4/views/10?filterQuery=label%3A%22good+first+issue%22) label to a few of our backlog items, and added hints on the possible implementation.
 
