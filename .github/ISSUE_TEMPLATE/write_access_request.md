@@ -1,8 +1,7 @@
 name: Write access request
 about: Request write access as contributor to this project
-title: 'Write access request for <your name>'
-labels: 'access'
-assignees: ''
+title: "Write access request for <your name>"
+labels: [access]
 <!--
 https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
 -->
@@ -12,10 +11,10 @@ body:
       value: |
         At OpenRewrite we invite anyone to [contribute to our projects](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#ways-to-contribute).
         Most contributions do not require elevated privileges and can be done by anyone.
-
+        
         However, if you're an active member of the community for this specific project, it can be beneficial to have write access to the repository.
         This allows you to merge pull requests, triage issues, and more.
-
+        
         If you would like to be added as a contributor, please fill out the following information.
   - type: input
     id: affiliation
