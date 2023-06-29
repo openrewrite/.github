@@ -32,6 +32,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Next steps
+        ### Next steps
         Thanks for taking the time to fill out this request. We'll review it and get back to you as soon as possible.
         If write access is granted we ask that you take an active role in the community, helping to triage issues, review pull requests, and help other contributors.
