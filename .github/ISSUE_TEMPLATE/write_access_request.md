@@ -1,10 +1,11 @@
----
 name: Write access request
 about: Request write access as contributor to this project
 title: 'Write access request for <your name>'
 labels: 'access'
 assignees: ''
-# https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
+<!--
+https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-forms
+-->
 body:
   - type: markdown
     attributes:
