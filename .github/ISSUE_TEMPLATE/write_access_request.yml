@@ -18,7 +18,7 @@ body:
     attributes:
       label: Affiliation
       description: What organization are you affiliated with? This helps us understand your relationship to the project. 
-      placeholder: ex. Acme Corp
+      placeholder: e.g., Acme Corp
     validations:
       required: true
   - type: textarea
@@ -26,7 +26,7 @@ body:
     attributes:
       label: Motivation
       description: Why do you want write access to this repository?
-      placeholder: ex. I'm an active member of the community and would like to help triage issues.
+      placeholder: e.g., I'm an active member of the community and would like to help triage issues.
     validations:
       required: true
   - type: markdown
