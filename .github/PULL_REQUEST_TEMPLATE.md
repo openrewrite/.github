@@ -24,5 +24,5 @@ Feel free to delete any sections that don't apply to your pull request.
 ### Checklist
 - [ ] I've added unit tests to cover both positive and negative cases
 - [ ] I've added the license header to any new files through `./gradlew licenseFormat`
-- [ ] I've used the IntelliJ auto-formatter on affected files
+- [ ] I've used the IntelliJ IDEA auto-formatter on affected files
 - [ ] I've updated the documentation (if applicable)
