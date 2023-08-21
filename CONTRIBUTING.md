@@ -78,15 +78,15 @@ If you want to add a new major feature, please reach out to us via [Slack](https
 
 ## Building & developing
 
-We recommend that you use [IntelliJ](https://www.jetbrains.com/idea/) for development, as some of the Gradle specifics in `openrewrite/rewrite` are not supported as well in other IDEs. 
+We recommend that you use [IntelliJ IDEA](https://www.jetbrains.com/idea/) for development, as some of the Gradle specifics in `openrewrite/rewrite` are not supported as well in other IDEs. 
 
 All projects use Java 17 for their tests, to take advantage of text blocks. For `src/main`, we use Java 8 exclusively so that our users only need Java 8 to run OpenRewrite migration recipes. We use [Gradle](https://gradle.org/) as our build tool.
 
 **Note**: The Gradle wrapper requires a preexisting JDK 8 installation. If not present, the build will fail to download the toolchain in the `:write-gradle:compilyGroovy` task. You will need to install JDK 8 manually. For Unix systems, we strongly recommend using [SDKMAN!](https://sdkman.io/) to install and switch between Java versions. 
 
-### IntelliJ changes
+### IntelliJ IDEA changes
 
-By default, IntelliJ uses Gradle to build and run tests with. While that ensures compatibility, it is very slow. To help speed up compilation and testing, we recommend that you change this to use `IntelliJ IDEA` instead:
+By default, IntelliJ IDEA uses Gradle to build and run tests with. While that ensures compatibility, it is very slow. To help speed up compilation and testing, we recommend that you change this to use `IntelliJ IDEA` instead:
 
 ![](/resources/gradle-select.png)
 
@@ -114,4 +114,4 @@ If you are contributing to OpenRewrite on Windows, please ensure that you set `c
 git clone -c core.autocrlf=false https://github.com/openrewrite/rewrite.git
 ```
 
-Also, as mentioned in the [IntelliJ section](#intellij-changes) above, please ensure that your system uses `UTF-8` for character encoding.
+Also, as mentioned in the [IntelliJ IDEA section](#intellij-idea-changes) above, please ensure that your system uses `UTF-8` for character encoding.
