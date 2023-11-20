@@ -78,40 +78,4 @@ If you want to add a new major feature, please reach out to us via [Slack](https
 
 ## Building & developing
 
-We recommend that you use [IntelliJ IDEA](https://www.jetbrains.com/idea/) for development, as some of the Gradle specifics in `openrewrite/rewrite` are not supported as well in other IDEs. 
-
-All projects use Java 17 for their tests, to take advantage of text blocks. For `src/main`, we use Java 8 exclusively so that our users only need Java 8 to run OpenRewrite migration recipes. We use [Gradle](https://gradle.org/) as our build tool.
-
-**Note**: The Gradle wrapper requires a preexisting JDK 8 installation. If not present, the build will fail to download the toolchain in the `:write-gradle:compilyGroovy` task. You will need to install JDK 8 manually. For Unix systems, we strongly recommend using [SDKMAN!](https://sdkman.io/) to install and switch between Java versions. 
-
-### IntelliJ IDEA changes
-
-By default, IntelliJ IDEA uses Gradle to build and run tests with. While that ensures compatibility, it is very slow. To help speed up compilation and testing, we recommend that you change this to use `IntelliJ IDEA` instead:
-
-![](/resources/gradle-select.png)
-
-As part of doing that, you'll also need to update the `Java Compiler` to set the `-parameters` compiler flag. If your system does not have `UTF-8` as its default character encoding (e.g., Windows), you must also add `-encoding utf8`.
-
-![](/resources/parameters.png)
-
-You will also need to add an override to the compiler parameters for the `rewrite.rewrite-java-17.main` module to have the compilation options of: 
-
-```
--parameters --add-exports jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED
-```
-
-![](/resources/compilation-options.png)
-
-#### Optimizing your IDE for only modules you want to work on
-
-If you are only working on a subset of the modules in [openrewrite/rewrite](https://github.com/openrewrite/rewrite), you can optimize your IDE to only load those modules. Create a new `IDE.properties` file if one doesn't exist in the base directory of the project and then copy the contents of [IDE.properties.tmp](https://github.com/openrewrite/rewrite/blob/main/IDE.properties.tmp) file to it. Next, comment out any lines that correspond to modules that you do not want to work on. This will cause Gradle to swap those project dependencies for binary dependencies resolved from either Maven local or the OSS snapshots repository – which will speed up your IDE.
-
-### Windows caveats
-
-If you are contributing to OpenRewrite on Windows, please ensure that you set `core.autocrlf = false` as [Rewrite](https://github.com/openrewrite/rewrite) requires unix-style line endings. This can be done when you clone the repository:
-
-```shell
-git clone -c core.autocrlf=false https://github.com/openrewrite/rewrite.git
-```
-
-Also, as mentioned in the [IntelliJ IDEA section](#intellij-idea-changes) above, please ensure that your system uses `UTF-8` for character encoding.
+For instructions on how to build and develop OpenRewrite projects, please see our [Building and developing OpenRewrite doc](https://docs.openrewrite.org/reference/building-openrewrite-from-source).
