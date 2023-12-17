@@ -1,5 +1,5 @@
 ---
-name: Recipe request
+name: 🧑‍🍳 Recipe request
 about: Suggest a new recipe for this project
 title: ''
 labels: 'recipe'
