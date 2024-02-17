@@ -1,11 +1,6 @@
-## Hi there 👋
+## Get fast, repeatable source code refactoring
+[OpenRewrite](https://www.moderne.io/community) is a community-driven open source project that enables developers to effectively eliminate technical debt within their repositories. It consists of an auto-refactoring engine that runs prepackaged, open source refactoring recipes for common framework migrations, security fixes, and stylistic consistency tasks.
 
-<p align="center">
-    <img src="https://github.com/openrewrite/rewrite/raw/main/doc/OpenRewrite.gif" alt="OpenRewrite"/>
-</p>
+OpenRewrite is Apache2 licensed and maintained by [Moderne](https://www.moderne.io/), the company that scales the use of OpenRewrite recipes across large codebases and multiple repositories.
 
-
-OpenRewrite is an Apache2 licensed free and open source code refactoring, remediation, and modernization automation tool.
-OpenRewrite is maintained by [Moderne Inc](https://moderne.io/), which provides hosted solutions for running OpenRewrite recipes at scale.
-
-We welcome you to join our [OSS Community Slack](https://join.slack.com/t/rewriteoss/shared_invite/zt-1ihfggp2a-glIit_aXJnhHAdv_0uzwow)
+Start with the [quickstart guide](https://docs.openrewrite.org/running-recipes/getting-started) and let OpenRewrite handle the boring parts of software development for you. We also welcome you to join our [community Slack](https://join.slack.com/t/rewriteoss/shared_invite/zt-1ihfggp2a-glIit_aXJnhHAdv_0uzwow).
