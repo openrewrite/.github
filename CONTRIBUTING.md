@@ -66,7 +66,7 @@ Are you looking for a good place to start contributing? We have added the ["Good
 
 Before you add a new recipe, we suggest you first open an issue to discuss the specifics of what you're wanting to achieve. Please include a before and after example so that we're able to judge whether or not the recipe is feasible or desirable. By reaching out before you start implementing, we can also help guide you to similar existing recipes that you might want to borrow parts of or compare your solution to.
 
-Once you start implementing the new recipe, we recommend you start by writing unit tests similar to those discussed in the [contributing fixes](#contributing-fixes) section. This way you'll be able to step through them with a debugger or the [TreeVisitingPrinter](https://docs.openrewrite.org/concepts-explanations/tree-visiting-printer) to explore what tree elements are available.
+Once you start implementing the new recipe, we recommend you start by writing unit tests similar to those discussed in the [contributing fixes](#contributing-fixes) section. This way you'll be able to step through them with a debugger or the [TreeVisitingPrinter](https://docs.openrewrite.org/concepts-and-explanations/tree-visiting-printer) to explore what tree elements are available.
 
 An early draft pull request at this stage makes it easier for us to provide you with feedback to improve your implementation – which will result in less work for you in the long run. 
 
