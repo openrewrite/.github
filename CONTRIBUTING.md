@@ -4,7 +4,10 @@ Thank you for taking the time to contribute to OpenRewrite! All types of contrib
 
 Please make sure to read the relevant section before making your contribution. It will make it a lot easier for us maintainers and smooth out the experience for all involved. The community looks forward to your contributions. 😁
 
-In this guide, you will find instructions for the [different ways you can contribute to the project](#ways-to-contribute) as well as [useful context for setting up your development environment](#building--developing).
+In this guide, you will find instructions for the [different ways you can contribute to the project](#ways-to-contribute), what we expect [when you open a pull request](#opening-a-pull-request), and [useful context for setting up your development environment](#building--developing).
+
+> [!NOTE]
+> This guide, our issue templates and our [pull request template](https://github.com/openrewrite/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md) are defined once for the whole organization in [openrewrite/.github](https://github.com/openrewrite/.github). GitHub applies them to every OpenRewrite repository that doesn't define its own, which also means you won't find them in the repository you cloned.
 
 ## Ways to contribute
 
@@ -75,6 +78,34 @@ Once you mark your implementation as ready for review, we will go through it in 
 ### New features
 
 If you want to add a new major feature, please reach out to us via [Slack](https://join.slack.com/t/rewriteoss/shared_invite/zt-nj42n3ea-b~62rIHzb3Vo0E1APKCXEA) to discuss the specifics. By doing so, we can help guide you and ensure that it's feasible before you spend a considerable amount of time.
+
+## Opening a pull request
+
+When you open a pull request, you will be asked to fill in our [pull request template](https://github.com/openrewrite/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md). Please tell us what changed and why; the rest of the sections are optional, and you are welcome to delete the ones that don't apply. The sections below explain the checklist at the bottom of that template.
+
+Draft pull requests are encouraged, and there's no need to work through the checklist before opening one. We only expect it to be complete by the time you mark your pull request ready for review.
+
+### Testing your changes
+
+Please cover both the case that should change, and a similar case that should be left alone, so that we don't regress on either. Our [recipe testing documentation](https://docs.openrewrite.org/authoring-recipes/recipe-testing) covers `RewriteTest` in detail.
+
+### Code style and formatting
+
+Please keep your diff limited to the lines you actually changed. Our repositories predate any enforced formatting, so they are not uniformly formatter-clean, and running the IntelliJ IDEA auto-formatter over a whole file will reindent unrelated code and bury your change.
+
+In practice that means:
+
+* Match the surrounding code.
+* If you use the IntelliJ IDEA auto-formatter, scope it to the lines or the selection you changed rather than the file. `Code | Reformat Code` offers `Only VCS changed text` for this.
+* Some repositories ship an [`.editorconfig`](https://editorconfig.org) that IntelliJ IDEA and other editors pick up automatically. Where it exists, it settles final newlines, trailing whitespace, and the indentation used in test sources; anything it doesn't cover is a judgement call best answered by the surrounding code.
+
+We would rather review a small diff with slightly inconsistent whitespace than a large one where the change is hard to find, so please don't spend long on this.
+
+### Keeping recipes.csv up to date
+
+Recipe modules publish a `src/main/resources/META-INF/rewrite/recipes.csv` describing the recipes they contain. Renaming a recipe, or changing its display name or description, makes that file stale.
+
+You don't need to edit it by hand. `./gradlew build` validates the file as part of `check` and fails when it has drifted, and `./gradlew recipeCsvGenerate` regenerates it. Please commit the result along with your change.
 
 ## Building & developing
 
