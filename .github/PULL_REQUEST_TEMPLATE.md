@@ -1,6 +1,10 @@
 <!--
 Thank you for taking the time to contribute to OpenRewrite!
 Feel free to delete any sections that don't apply to your pull request.
+
+This template is defined once for the whole organization in openrewrite/.github, so you
+won't find it in the repository you're contributing to. The same is true of our issue
+templates and contributing guide: https://github.com/openrewrite/.github
 -->
 
 ## What's changed?
@@ -24,4 +28,5 @@ Feel free to delete any sections that don't apply to your pull request.
 ### Checklist
 - [ ] I've added unit tests to cover both positive and negative cases
 - [ ] I've read and applied the [recipe conventions and best practices](https://docs.openrewrite.org/authoring-recipes/recipe-conventions-and-best-practices)
-- [ ] I've used the IntelliJ IDEA auto-formatter on affected files
+- [ ] I've run `./gradlew build` locally, and committed any resulting changes to `recipes.csv`
+- [ ] I've [formatted the lines I changed](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#code-style-and-formatting), without reformatting code I didn't touch
