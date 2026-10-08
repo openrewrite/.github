@@ -40,7 +40,7 @@ Furthermore, when asking a question or reporting an issue, please be as specific
 4. Add as much of your OpenRewrite configuration as you're able to share so that we can rule out configuration issues.
 5. Let us know what recipe you are running, especially when using a `rewrite.yml` file.
 6. Include a before and after. Also, what did you expect the after to be?
-7. When errors occur, please include the output of `--stacktrace` for Gradle or `--debug` for Maven.
+7. When errors occur, please include the output of `--stacktrace` for Gradle or `-e` for Maven.
 8. Ensure that you are asking questions or reporting issues on the respective OpenRewrite module if at all possible.
 
 By doing all of these things, you will not only help us get you answers more quickly, but you will help out the community who may search for these details in the future.
@@ -81,9 +81,20 @@ If you want to add a new major feature, please reach out to us via [Slack](https
 
 ## Opening a pull request
 
-When you open a pull request, you will be asked to fill in our [pull request template](https://github.com/openrewrite/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md). Please tell us what changed and why; the rest of the sections are optional, and you are welcome to delete the ones that don't apply. The sections below explain the checklist at the bottom of that template.
+When you open a pull request, you will be asked to fill in our [pull request template](https://github.com/openrewrite/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md). Please tell us what changed and why; the section for reviewers is optional, and you are welcome to delete it. The sections below explain the checklist at the bottom of that template.
 
 Draft pull requests are encouraged, and there's no need to work through the checklist before opening one. We only expect it to be complete by the time you mark your pull request ready for review.
+
+### Using AI tools
+
+You're welcome to use AI coding assistants; OpenRewrite itself exists to automate code changes. What we ask is that you remain the author of your pull request:
+
+* Review every line before you open it, and be ready to explain and defend the change yourself in review.
+* Run the tests locally, rather than relying on the assistant's claim that they pass.
+* Keep the description short and specific. A sentence on the problem and a before and after help us more than a generated summary of the diff.
+* Mention the tool in your description if it wrote a substantial part of the change, so reviewers know what they're looking at.
+
+Pull requests that look unreviewed, such as those with failing tests, unrelated changes or descriptions that don't match the diff, may be closed without a detailed review.
 
 ### Testing your changes
 
