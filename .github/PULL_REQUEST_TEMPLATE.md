@@ -10,8 +10,7 @@ templates and contributing guide: https://github.com/openrewrite/.github
 <!-- What the change does, ideally with a short before and after. -->
 
 ## Why?
-<!-- The problem this solves. Link the issue it fixes, if any. -->
-- Closes #
+<!-- The problem this solves. Link the issue it fixes, if any, as in `Closes #123`. -->
 
 ## Anything reviewers should know?
 <!-- Optional: trade-offs, alternatives you considered, or parts you're unsure about. Delete if not needed. -->
@@ -22,4 +21,4 @@ templates and contributing guide: https://github.com/openrewrite/.github
 - [ ] I've read and applied the [recipe conventions and best practices](https://docs.openrewrite.org/authoring-recipes/recipe-conventions-and-best-practices)
 - [ ] I've run `./gradlew build` locally, and committed any resulting changes to `recipes.csv`
 - [ ] I've [formatted the lines I changed](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#code-style-and-formatting), without reformatting code I didn't touch
-- [ ] If I used [AI tools](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#using-ai-tools), I've reviewed every line of this change and can explain it myself
+- [ ] I've reviewed every line of this change and can explain it myself, including anything written with [AI tools](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#using-ai-tools)

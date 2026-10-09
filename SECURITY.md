@@ -4,7 +4,7 @@
 
 Please do not report security vulnerabilities through public issues, discussions or pull requests.
 
-Instead, report them privately through GitHub, using the **Report a vulnerability** button on the **Security** tab of the affected repository. This keeps the details confidential until a fix is available, and lets us collaborate with you on a fix and an advisory.
+Instead, report them privately through GitHub, using the **Report a vulnerability** button on the **Security** tab of the affected repository. This keeps the details confidential while we work on a fix, and lets us publish an advisory with you.
 
 Please include as much of the following as you can:
 
