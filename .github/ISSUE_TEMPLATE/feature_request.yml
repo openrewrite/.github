@@ -1,0 +1,33 @@
+name: 💡 Feature request
+description: Suggest an improvement to OpenRewrite itself, such as its parsers, APIs or build plugins
+labels: [enhancement]
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting an improvement to OpenRewrite!
+        Looking for a new recipe instead? Please use the recipe request form.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the solution you'd like
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Have you considered any alternatives or workarounds?
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Any thoughts that come to mind, or similar items on the backlog already.
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing this feature
+      options:
+        - label: I'm interested in [contributing this feature](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#new-features), and would like some guidance on where to start.
