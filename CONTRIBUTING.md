@@ -85,12 +85,23 @@ When you open a pull request, you will be asked to fill in our [pull request tem
 
 Draft pull requests are encouraged, and there's no need to work through the checklist before opening one. We only expect it to be complete by the time you mark your pull request ready for review.
 
+### Keeping pull requests small
+
+Small pull requests get reviewed sooner, and more thoroughly. Please aim for each pull request to do one thing: fix one bug, add one recipe, or make one refactoring. If your change touches many files or mixes concerns, split it up; for instance:
+
+* Land a refactoring or new API on its own, before the change that uses it.
+* Add a recipe first, and include it in a composite or migration recipe in a follow-up.
+* Move bulk mechanical changes, such as a rename or a dependency update, into their own pull request, separate from changes in behavior.
+
+When the parts depend on each other, open them as a stack: each pull request builds on the one before it, and is merged in order. With write access you can target each pull request at the branch of the previous one. From a fork, open them against `main` instead, mention in each description which pull request it depends on, and point reviewers at the commits that are new. If you're unsure how to split a larger change, open an issue or a draft pull request first, and we'll help you plan it.
+
 ### Using AI tools
 
 You're welcome to use AI coding assistants; OpenRewrite itself exists to automate code changes. What we ask is that you remain the author of your pull request:
 
 * Review every line before you open it, and be ready to explain and defend the change yourself in review.
 * Run the tests locally, rather than relying on the assistant's claim that they pass.
+* Keep the change as small as the problem. Assistants make large changes cheap to write, but not to review, so please [split them up](#keeping-pull-requests-small).
 * Keep the description short and specific. A sentence on the problem and a before and after help us more than a generated summary of the diff.
 * Mention the tool in your description if it wrote a substantial part of the change, so reviewers know what they're looking at.
 
