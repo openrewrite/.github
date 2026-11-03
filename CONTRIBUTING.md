@@ -81,9 +81,19 @@ If you want to add a new major feature, please reach out to us via [Slack](https
 
 ## Opening a pull request
 
-When you open a pull request, you will be asked to fill in our [pull request template](https://github.com/openrewrite/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md). Please tell us what changed and why; the section for reviewers is optional, and you are welcome to delete it. The sections below explain the checklist at the bottom of that template.
+When you open a pull request, you will be asked to fill in our [pull request template](https://github.com/openrewrite/.github/blob/main/.github/PULL_REQUEST_TEMPLATE.md). Please tell us what changed, why, and how you tested it; the section for reviewers is optional, and you are welcome to delete it. The sections below explain the template and the checklist at the bottom of it.
 
 Draft pull requests are encouraged, and there's no need to work through the checklist before opening one. We only expect it to be complete by the time you mark your pull request ready for review.
+
+### Is this the right change?
+
+The template asks five short questions, to help us judge a change before we review its code. A line each is enough, and you can skip any that don't apply:
+
+* **Do we already have it?** Search the [recipe catalog](https://docs.openrewrite.org/recipes), and open issues and pull requests, for something that already does this or could be extended to.
+* **Could it be declarative?** A composition of existing recipes in YAML is easier to maintain than a new imperative recipe. If you wrote Java, tell us why YAML or a Refaster template wasn't enough.
+* **Is it worth it?** How common is the problem, and what happens to the code when it isn't fixed?
+* **Does it fix the problem, or move it?** For instance a recipe that leaves code that no longer compiles, or a fix that skips the case instead of handling it.
+* **Does it do no harm?** Does anything that already worked now behave differently, such as code the recipe handled before?
 
 ### Keeping pull requests small
 
