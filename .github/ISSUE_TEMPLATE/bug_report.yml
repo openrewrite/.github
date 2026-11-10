@@ -1,0 +1,99 @@
+name: 🐛 Bug report
+description: A recipe, parser or plugin did something wrong, or failed
+labels: [bug]
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue with OpenRewrite!
+        We release every few weeks, so please first check whether the issue still occurs with the [latest versions](https://docs.openrewrite.org/reference/latest-versions-of-every-openrewrite-module), or even our [snapshots](https://docs.openrewrite.org/reference/snapshot-instructions).
+        Have a question rather than a bug? [Ask on GitHub Discussions](https://github.com/openrewrite/rewrite/discussions) instead.
+  - type: input
+    id: recipe
+    attributes:
+      label: Which recipe were you running?
+      description: The fully qualified recipe name, or the name of your own declarative recipe from `rewrite.yml`.
+      placeholder: org.openrewrite.java.migrate.UpgradeToJava25
+  - type: textarea
+    id: versions
+    attributes:
+      label: Which versions are you using?
+      description: OpenRewrite itself, the build plugin or CLI, and any recipe modules involved.
+      placeholder: |
+        rewrite-core 8.x.y
+        rewrite-maven-plugin 6.x.y
+        rewrite-migrate-java 3.x.y
+  - type: dropdown
+    id: runner
+    attributes:
+      label: How are you running OpenRewrite?
+      options:
+        - Maven plugin
+        - Gradle plugin
+        - Moderne CLI
+        - Moderne Platform
+        - Moderne MCP server, through a coding agent
+        - A unit test (RewriteTest)
+        - Something else
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language or file type is affected?
+      multiple: true
+      options:
+        - Java
+        - Kotlin
+        - Groovy
+        - Scala
+        - C#
+        - JavaScript / TypeScript
+        - Python
+        - Go
+        - Maven POM
+        - Gradle build script
+        - YAML
+        - XML
+        - JSON
+        - Properties
+        - TOML
+        - Other
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Configuration
+      description: |
+        Your plugin configuration and `rewrite.yml`, if any, so we can rule out configuration issues.
+        Is your project public? A link helps too.
+      render: text
+  - type: textarea
+    id: before
+    attributes:
+      label: What is the smallest input that reproduces the problem?
+      description: |
+        A self-contained snippet of the source file before running the recipe. This usually becomes the unit test for the fix.
+        We also accept [pull requests that merely replicate an issue](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#contributing-fixes), as a step up to a full fix.
+      render: text
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to see?
+      render: text
+  - type: textarea
+    id: actual
+    attributes:
+      label: What did you see instead?
+      description: The output of the recipe, or a description of the behavior you saw.
+      render: text
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Stack trace
+      description: When errors occur, please include the output of `--stacktrace` for Gradle or `-e` for Maven.
+      render: text
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing a fix
+      options:
+        - label: I'm interested in [contributing a fix](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#contributing-fixes), and would like some guidance on where to start.

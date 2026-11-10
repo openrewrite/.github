@@ -1,1 +1,11 @@
 blank_issues_enabled: true
+contact_links:
+  - name: ❓ Questions
+    url: https://github.com/openrewrite/rewrite/discussions
+    about: Ask how to use or write recipes on GitHub Discussions, or join us on Slack or Discord via the support guide.
+  - name: 📖 Documentation and recipe catalog
+    url: https://docs.openrewrite.org
+    about: Guides, references and every available recipe.
+  - name: 🔒 Security vulnerability
+    url: https://github.com/openrewrite/.github/blob/main/SECURITY.md
+    about: Please report security issues privately, not as a public issue.

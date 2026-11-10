@@ -1,0 +1,66 @@
+name: 🧑‍🍳 Recipe request
+description: Suggest a new recipe, or a change to what an existing recipe covers
+labels: [recipe]
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new recipe for OpenRewrite!
+        With thousands of recipes available, please first search the [recipe catalog](https://docs.openrewrite.org/recipes) to see whether what you need already exists, perhaps under a different name or as part of a larger migration.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: For instance a migration, a deprecation, or a code pattern you'd like to remove across your repositories.
+  - type: dropdown
+    id: language
+    attributes:
+      label: Which language or file type would the recipe change?
+      multiple: true
+      options:
+        - Java
+        - Kotlin
+        - Groovy
+        - Scala
+        - C#
+        - JavaScript / TypeScript
+        - Python
+        - Go
+        - Maven POM
+        - Gradle build script
+        - YAML
+        - XML
+        - JSON
+        - Properties
+        - TOML
+        - Other
+  - type: textarea
+    id: before
+    attributes:
+      label: Before
+      description: A self-contained example of the code before applying the recipe. This becomes the start of the recipe unit tests.
+      render: text
+  - type: textarea
+    id: after
+    attributes:
+      label: After
+      description: The same example after applying the recipe.
+      render: text
+  - type: textarea
+    id: preconditions
+    attributes:
+      label: When should the recipe not make a change?
+      description: Preconditions such as language or library versions, and similar code that should be left alone.
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Existing recipes this could build on, alternatives you considered, limitations or implementation hints.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I've searched the [recipe catalog](https://docs.openrewrite.org/recipes) and existing issues for a similar recipe.
+        - label: I'm interested in [contributing this recipe](https://github.com/openrewrite/.github/blob/main/CONTRIBUTING.md#adding-new-recipes), and would like some guidance on where to start.
